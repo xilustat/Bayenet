@@ -45,4 +45,4 @@ As heavy-tailed error distribution and outliers in the response variable widely 
 
 This package provides implementation for methods proposed in
 
-  - Lu, X. and Wu, C. (2023). Bayesian quantile elastic net with spike-and-slab priors.
+  - Lu, X. and Wu, C. (2024). Bayesian quantile elastic net with spike-and-slab priors.
