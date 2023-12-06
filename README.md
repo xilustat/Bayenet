@@ -36,9 +36,9 @@ As heavy-tailed error distribution and outliers in the response variable widely 
      fit=Bayenet(X[-test,], Y[-test], clin[-test,], max.steps=10000, penalty="elastic net")  
      predict.Bayenet(fit, X[test,], clin[test,], Y[test,])
 
-#### Example.2 (alternative: Bayesian quantile lasso with spike-and-slab priors)
+#### Example.2 (alternative: Bayesian quantile lasso)
 
-    fit= Bayenet(X, Y, clin, max.steps, penalty="lasso")
+    fit= Bayenet(X, Y, clin, max.steps, sparse="False", penalty="lasso")
     
 
 ## Methods
