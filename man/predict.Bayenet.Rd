@@ -33,6 +33,13 @@ Note that the effects of clinical factors are not subject to selection.
 If Y.new is provided, the prediction error will be computed. For robust methods, the prediction mean absolute deviations (PMAD) will be computed.
 For non-robust methods, the prediction mean squared error (PMSE) will be computed.
 }
+\examples{
+data(dat)
+test=sample((1:nrow(X)), floor(nrow(X)/5))
+fit=Bayenet(X[-test,], Y[-test], clin[-test,], max.steps=500,penalty="lasso")
+predict(fit, X[test,], clin[test,], Y[test,])
+
+}
 \seealso{
 \code{\link{Bayenet}}
 }

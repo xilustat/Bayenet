@@ -2,7 +2,7 @@
 #' @importFrom Rcpp sourceCpp
 NULL
 
-#' @docType package
+#' _package
 #' @keywords overview
 #' @name Bayenet-package
 #' @title   Bayesian Quantile Elastic Net for Genetic Study
@@ -32,7 +32,7 @@ NULL
 #' Li, Q. and Lin, N. (2010). The Bayesian elastic net. {\emph{Bayesian Anal}, 5(1): 151-170} \doi{10.1214/10-BA506}
 #' 
 #' Li, Q., Xi, R. and Lin, N. (2010). The Bayesian regularized quantile regression. {\emph{Bayesian Analysis}, 5(3): 533-556}
-#' \doi{:10.1214/10-BA521}
+#' \doi{10.1214/10-BA521}
 #' 
 #' @seealso \code{\link{Bayenet}}
 NULL

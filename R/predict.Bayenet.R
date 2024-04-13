@@ -21,11 +21,11 @@
 #' @rdname predict.Bayenet
 #' @seealso \code{\link{Bayenet}}
 #'
-#@examples
-#data(dat)
-#test=sample((1:nrow(X)), floor(nrow(X)/5))
-#fit=Bayenet(X[-test,], Y[-test], clin[-test,], max.steps=5000,penalty="lasso")
-#predict.Bayenet(fit, X[test,], clin[test,], Y[test,])
+#' @examples
+#' data(dat)
+#' test=sample((1:nrow(X)), floor(nrow(X)/5))
+#' fit=Bayenet(X[-test,], Y[-test], clin[-test,], max.steps=500,penalty="lasso")
+#' predict(fit, X[test,], clin[test,], Y[test,])
 #'
 #' @export
 predict.Bayenet=function(object, X.new, clin.new, Y.new,...){

@@ -14,7 +14,23 @@ print.Bayenet=function(x, digits = max(3, getOption("digits") - 3),...){
   print(x$coefficient, digits)
 }
 
-
+#' print a Selection object
+#'
+#' Print a summary of a Selection object
+#'
+#' @param x Selection object.
+#' @param digits significant digits in printout.
+#' @param ... other print arguments
+#' @return No return value, called for side effects.
+#' @usage \method{print}{Selection}(x, digits = max(3, getOption("digits") - 3), \dots)
+#' @seealso \code{\link{Selection}}
+#' @export
+print.Selection=function(x, digits = max(3, getOption("digits") - 3),...){
+  cat("\nMethod:\n")
+  print(x$method)
+  cat("\n")
+  print(x$summary)
+}
 
 #' print a predict.Bayenet object
 #'
